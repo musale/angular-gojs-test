@@ -12,13 +12,13 @@ export class AngularGojsTestAppComponent implements AfterViewInit{
 
     ngAfterViewInit(){
         // create a make type from go namespace and assign it to MAKE
-        let MAKE = go.GraphObject.make;
+        const MAKE = go.GraphObject.make;
 
         // get the div in the HTML file
-        let diagramDiv = this.div.nativeElement;
+        const diagramDiv = this.div.nativeElement;
 
         // instatiate MAKE with Diagram type and the diagramDiv
-        let myDiagram =
+        const myDiagram =
             MAKE(go.Diagram, diagramDiv,
                 {
                     initialContentAlignment: go.Spot.Center, // center Diagram contents
